@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Router } from "./router/Router";
+
+const user = {
+  name: "テストユーザー",
+  image: "https://picsum.photos/160/160",
+  email: "12345@example.com",
+  company: {
+    name: "テスト株式会社",
+  },
+  website: "https://google.com",
+};
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Router />;
 }
 
 export default App;
